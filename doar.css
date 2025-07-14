@@ -1,0 +1,141 @@
+:root {
+    --matcha: #809671;
+    --almond: #E5E0D8;
+    --pistache: #B8B792;
+    --chai: #D2A880;
+    --carob: #725C3A;
+    --vanilla: #E5D2B8;
+}
+
+/* Menu superior (cor de fundo, espaçamento).*/
+nav {
+    background-color: var(--matcha);
+    padding: 1rem;
+}
+
+/* Menu na barra de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links do menu. */
+nav ul li {
+    margin-left: 40px;
+}
+
+
+nav ul li a {
+    color: var(--almond);
+    text-decoration: none;
+    font-weight: 'Georgia', serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: var(--vanilla);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, var(--almond), var(--pistache));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: var(--carob);
+    margin-bottom: 1rem;
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0 5px;
+    color: var(--carob);
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="tel"],
+.formulario input[type="file"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--vanilla);
+    border-radius: 4px;
+    background-color: var(--vanilla);
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.formulario button {
+    background-color: var(--matcha);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: var(--carob);
+}
+
+/* Foco nos campos */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: var(--matcha);
+    outline: none;
+}
+
+/* Validação visual dos campos obrigatórios 
+.formulario input:invalid,
+.formulario select:invalid,
+.formulario textarea:invalid {
+    border-color: red;
+}
+
+.formulario input:valid,
+.formulario select:valid,
+.formulario textarea:valid {
+    border-color: green;
+}*/
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .formulario {
+        padding: 1.5rem;
+    }
+
+    .formulario h2 {
+        font-size: 1.5rem;
+    }
+}

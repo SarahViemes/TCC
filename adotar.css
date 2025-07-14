@@ -1,0 +1,128 @@
+:root {
+  --matcha: #809671;
+  --almond: #E5E0D8;
+  --pistache: #B8B792;
+  --chai: #D2A880;
+  --carob: #725C3A;
+  --vanilla: #E5D2B8;
+}
+
+/* Menu superior (cor de fundo, espaçamento).*/
+nav {
+  background-color: var(--matcha);
+  padding: 1rem;
+}
+
+/* Menu na barra de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links do menu. */
+nav ul li {
+  margin-left: 40px;
+}
+
+
+nav ul li a {
+  color: var(--almond);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: var(--vanilla);
+}
+
+body {
+  background-color: var(--almond);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h2 {
+  color: var(--carob);
+}
+
+p {
+  color: #555;
+  margin: 5px 0;
+}*/
+
+.card .btn-info {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  padding: 8px 16px;
+  background-color: var(--pistache); /* nova cor aqui */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.card .btn-info:hover {
+  background-color: var(--vanilla); /* ou outro tom claro */
+  color: var(--chai);
+  transform: scale(1.05);
+}
+
+
+.card .btn-adotar {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  padding: 10px 20px;
+  background-color: var(--matcha);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.card .btn-adotar:hover {
+  background-color: var(--chai);
+  color: white;
+  transform: scale(1.08);
+}
+
+
+footer {
+  background-color: var(--pistache);
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Doar Animal</title>
+  <link rel="stylesheet" href="doar.css">
+</head>
+<body>
+
+     <nav>
+  <ul style="list-style: none; display: flex; gap: 30px; justify-content: center; font-weight: bold;">
+    <li><a href="inicio.html">Início</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="adotar.html">Adotar</a></li>
+    <li><a href="doar.html">Doar</a></li>
+    <li><a href="agendarVisita.html">Agendar Visita</a></li>
+    <li><a href="contato.html">Contato</a></li> 
+  </ul>
+</nav>
+
+  <div class="container">
+    <form class="formulario" action="#" method="POST" enctype="multipart/form-data">
+      <h2>Doação de Animal</h2>
+
+      <label for="nomeDoador">Seu nome:</label>
+      <input type="text" id="nomeDoador" name="nomeDoador" required>
+
+      <label for="contato">Telefone:</label>
+      <input type="tel" id="contato" name="contato" required>
+
+
+      <label for="cidade">Cidade e bairro:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <hr>
+
+      <label for="nomeAnimal">Nome do animal:</label>
+      <input type="text" id="nomeAnimal" name="nomeAnimal">
+
+
+      <label for="raca">Raça:</label>
+      <input type="text" id="raca" name="raca">
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+      </select>
+
+      <label for="idade">Idade aproximada:</label>
+      <input type="text" id="idade" name="idade">
+
+      <label for="porte">Porte:</label>
+      <select id="porte" name="porte" required>
+        <option value="Pequeno">Pequeno</option>
+        <option value="Médio">Médio</option>
+        <option value="Grande">Grande</option>
+      </select>
+
+      <label for="saude">Situação de saúde:</label>
+      <textarea id="saude" name="saude" placeholder="Ex: Vacinado, castrado, vermifugado..."></textarea>
+
+      <label for="temperamento">Temperamento:</label>
+      <textarea id="temperamento" name="temperamento" placeholder="Sociável, calmo, agitado, convive com crianças..."></textarea>
+
+      <label for="motivo">Motivo da doação:</label>
+      <textarea id="motivo" name="motivo"></textarea>
+
+      <label for="foto">Foto do animal:</label>
+      <input type="file" id="foto" name="foto" accept="image/*">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

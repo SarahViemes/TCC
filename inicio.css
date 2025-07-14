@@ -1,0 +1,97 @@
+:root {
+  --matcha: #809671;
+  --almond: #E5E0D8;
+  --pistache: #B8B792;
+  --chai: #D2A880;
+  --carob: #725C3A;
+  --vanilla: #E5D2B8;
+}
+
+body {
+  background-color: var(--almond);
+  color: var(--carob);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--matcha);
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color: var(--vanilla);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+nav a {
+  color: var(--carob);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--matcha);
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.inicio {
+  background-color: var(--vanilla);
+  margin: 20px;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inicio h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  color: var(--carob);
+}
+
+.logo {
+  max-width: 90%;
+  height: auto;
+}
+
+button {
+  background-color: var(--chai);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--pistache);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--pistache);
+  color: var(--carob);
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

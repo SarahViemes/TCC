@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de Adoção - ASPADI</title>
+  <link rel="stylesheet" href="formularioAdocao.css">
+</head>
+<body>
+
+  <h1>Formulário de Adoção de Animal</h1>
+
+   <div class="botao-voltar-container">
+    <a href="adotar.html" class="botao-voltar">&larr; Voltar</a>
+  </div>
+
+
+  <form action="#" method="post">
+    
+    <fieldset>
+      <legend>Informações do Adotante</legend>
+      <label>Nome completo:</label>
+      <input type="text" name="nome" required>
+
+      <label>Data de nascimento:</label>
+      <input type="date" name="nascimento" required>
+
+      <label>CPF:</label>
+      <input type="text" name="cpf" required>
+
+      <!-- <label>RG:</label>
+      <input type="text" name="rg" required> 
+
+      <label>Profissão:</label>
+      <input type="text" name="profissao"> -->
+
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" required>
+
+      <label>E-mail:</label>
+      <input type="email" name="email">
+
+      <!-- <label>Endereço completo:</label>
+      <input type="text" name="endereco" required>
+    </fieldset> -->
+
+    <fieldset>
+      <legend>Sobre o Local</legend>
+
+      <label>Tipo de residência:</label>
+      <select name="residencia">
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="sitio">Sítio/Chácara</option>
+      </select>
+
+      <label>A residência é:</label>
+      <select name="propriedade">
+        <option value="propria">Própria</option>
+        <option value="alugada">Alugada</option>
+      </select>
+
+      <label>Permite animais?</label>
+      <select name="permite">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label>O local é telado (seguro para animais)?</label>
+      <select name="telado">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <!--<label>Quem mais mora com você?</label>
+      <input type="text" name="moradores"> -->
+
+      <label>Há outros animais na casa?</label>
+      <input type="text" name="outros_animais" placeholder="Ex: 2 cães, 1 gato">
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações sobre a Adoção</legend>
+
+      <label>Animal desejado (nome ou tipo):</label>
+      <input type="text" name="animal">
+
+      <label>Preferência:</label>
+      <select name="preferencia">
+        <option>Cão - Porte Pequeno</option>
+        <option>Cão - Porte Médio</option>
+        <option>Cão - Porte Grande</option>
+        <option>Gato - Filhote</option>
+        <option>Gato - Adulto</option>
+      </select>
+
+      <!--<label>Por que deseja adotar um animal?</label>
+      <textarea name="motivo" rows="3"></textarea>
+
+      <label>Já teve animais antes? Quais?</label>
+      <textarea name="experiencia" rows="2"></textarea>
+
+      <label>Está ciente dos custos e cuidados com o animal?</label>
+      <select name="cuidados">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label>Quem cuidará do animal em caso de viagem/imprevisto?</label>
+      <input type="text" name="responsavel_viagem">
+    </fieldset> -->
+
+    <fieldset>
+      <legend>Compromissos</legend>
+
+      <label><input type="checkbox" name="compromissos" required> Comprometo-me a cuidar bem do animal, oferecendo abrigo, alimentação, carinho e cuidados veterinários.</label>
+      <label><input type="checkbox" name="castracao" required> Estou ciente da importância da castração e vacinas regulares.</label>
+      <label><input type="checkbox" name="nao_abandono" required> Não irei doá-lo a terceiros ou abandoná-lo sob nenhuma hipótese.</label>
+    </fieldset>
+
+    <div style="text-align:center;">
+      <button type="submit">Enviar Formulário</button>
+    </div>
+  </form>
+
+</body>
+</html>

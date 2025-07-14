@@ -1,0 +1,102 @@
+:root {
+  --matcha: #809671;
+  --almond: #E5E0D8;
+  --pistache: #B8B792;
+  --chai: #D2A880;
+  --carob: #725C3A;
+  --vanilla: #E5D2B8;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--almond);
+  color: var(--carob);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--matcha);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: var(--vanilla);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(114, 92, 58, 0.2);
+}
+
+fieldset {
+  border: 2px solid var(--pistache);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--carob);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--chai);
+  background-color: #fff;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+button {
+  background-color: var(--matcha);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--pistache);
+  color: var(--carob);
+}
+
+.botao-voltar-container {
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+.botao-voltar {
+  display: inline-block;
+  background-color: var(--chai);
+  color: var(--carob);
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: var(--pistache);
+  color: var(--matcha);
+}
